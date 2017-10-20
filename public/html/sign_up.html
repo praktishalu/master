@@ -6,17 +6,30 @@
 	<script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
-	<div id="sign_up_box">
+	<div id="signup_box">
 			<div>
-				<label>Email:</label>
-				<input type="text" name="" id="login_email">
+				<h3 id="label_name">Name:</h3>
+				<input type="text" name="name" id="signup_name">
 			</div>
 			<div>
-				<label>Password:</label>
-				<input type="password" name="" id="login_password">
+				<h3 id="label_company">Company:</h3>
+				<input type="text" name="" id="signup_company">
 			</div>
-			<button onclick="login()">Login</button>
-		<p>Don't have an account yet <a href="../html/sign_up.html">&nbsp;&nbsp;&nbsp;sign up</a></p>
+			<div>
+				<h3 id="label_email">Email:</h3>
+				<input type="text" name="" id="signup_email">
+			</div>
+			<div>
+				<h3 id="label_username">Username:</h3>
+				<input type="text" name="" id="signup_username">
+			</div>
+			<div>
+				<h3 id="label_password">Password:</h3>
+				<input type="password" name="" id="signup_password">
+			</div>
+			<button onclick="login()" id="signup_button">Sign Up</button>
+			<a href="">Forgot password?</a>
+		<p>Already have an account &nbsp;<a href="../html/login.html">Login</a></p>
 	</div>
 </body>
 </html>
