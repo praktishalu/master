@@ -1,0 +1,13 @@
+body{
+	background-color: lightgray;
+}
+#login_box{
+	border: 3px solid red;
+	height: 50%;
+	width: 50%;
+	 position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+}
