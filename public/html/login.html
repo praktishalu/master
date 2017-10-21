@@ -10,11 +10,11 @@
 	<div id="login_box">
 			<div>
 				<h3 id="label_email">Email:</h3>
-				<input type="text" name="" id="login_email" oninput="validate_signin_email()">
+				<input type="email" name="" id="login_email" oninput="validate_signin_email()">
 			</div>
 			<div>
 				<h3 id="label_password">Password:</h3>
-				<input type="password" name="" id="login_password">
+				<input type="password" name="" id="login_password" oninput="validate_signin_password()">
 			</div>
 			<button onclick="login()" id="login_button">Login</button>
 			<a href="">Forgot password?</a>

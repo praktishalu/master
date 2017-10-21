@@ -1,4 +1,6 @@
 console.log("main js called");
+var valid_email = false;
+var valid_password = false;
 var user = {};
 user.test = {};
 user.test.name = "test";
@@ -7,6 +9,8 @@ user.test.email = "test@gmail.com";
 user.test.username = "test username";
 user.test.password = "test";
 function validate_signout(){
+	document.getElementById("login_button").disabled = true;
+	document.getElementById("login_password").disabled = true;
 	if (typeof(Storage) !== "undefined") {
 	    if(localStorage.getItem("loggedin") == "true"){
 	    	localStorage.setItem("loggedin", "false");
@@ -17,7 +21,7 @@ function validate_signout(){
 		alert("your browser does not support web Storage..So login functionality cannot be implemented");
 	}
 }
-validate_signout();
+
 function login(){
 	var login_email = document.getElementById("login_email").value;
 	var login_password = document.getElementById("login_password").value;
@@ -49,4 +53,26 @@ function sign_up(){
 }
 function validate_signin_email(){
 	console.log(document.getElementById("login_email").value);
+	var login_email = document.getElementById("login_email").value;
+	var pos = login_email.search("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}");
+	if(pos == -1){
+		console.log("invalid email");
+		valid_email = false;
+		document.getElementById("login_password").disabled = true;
+	}
+	else{
+		console.log("valid email");
+		valid_email = true;
+		document.getElementById("login_password").disabled = false;
+	}
+	// document.getElementById("login_button").disabled = false;
+}
+function validate_signin_password(){
+	console.log(document.getElementById("login_password").value);
+	if((document.getElementById("login_password").value).length != null){
+		document.getElementById("login_button").disabled = false;
+	}
+	else{
+		document.getElementById("login_button").disabled = true;
+	}
 }

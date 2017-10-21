@@ -9,10 +9,12 @@ function checkLogIn(){
 	if (typeof(Storage) !== "undefined") {
 	    if(localStorage.getItem("loggedin") == "true"){
 	    	document.getElementById("login_button").innerHTML = "sign out";
+	    	document.getElementById("signup_li").style.display = "none";
 	    }
 	    else{
 	    	if(localStorage.getItem("loogedin") == "false"){
 	    		document.getElementById("login_button").innerHTML = "Login";
+	    		document.getElementById("signup_li").style.display = "block";
 	    	}
 	    }
 	}
