@@ -5,27 +5,35 @@
 	<link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
 <body>
-	<div id="contact_header">
-		<p>Contact Us</p>
+	<ul>
+		<li id="logo_image"><a href="../index.html">iMED</a></li>
+		<li><a href="../html/contact.html">Contact</a></li>
+		<li id="signup_li"><a href="../html/sign_up.html" id="signup_button">Sign Up</a></li>
+		<li><a href="../html/login.html" id="login_button">Login</a></li>
+		<li><a href="../html/products.html">Products</a></li>
+		<li><a href="../html/about.html">About Us</a></li>
+		<li><a href="../html/home.html">Home</a></li>
+	</ul>
+	<div id="contactus_box">
+			<div>
+				<h3 id="label_location">Location:</h3>
+				<input type="text" name="location" id="contactus_location">
+			</div>
+			<div>
+				<h3 id="label_phone">Phone:</h3>
+				<input type="phone" name="phone" id="contactus_phone">
+			</div>
+			<div>
+				<h3 id="label_email">Email:</h3>
+				<input type="email" name="" id="contactus_email">
+			</div>
+			<div>
+				<h3 id="label_url">Website Url:</h3>
+				<input type="text" name="" id="cotnactus_url">
+			</div>
+			<div id="contact_button_row">
+				<button onclick="contact_us()" id="contactus_button">Contact Us</button>
+			</div>
 	</div>
-	<center>
-		<form>
-			<div>
-				<label>Name:</label>
-				<input type="text" name="">
-			</div>
-				<div><label>Email:</label>
-				<input type="email" name="">
-			</div>
-			<div>
-				<label>Phone:</label>
-				<input type="numbe" name="">
-			</div>
-			<div>
-				<input type="submit" name="" value="submit">
-				<input type="reset" name="" value="reset">
-			</div>
-		</form>
-	</center>
 </body>
 </html>
