@@ -1,27 +1,7 @@
 body{
 	background-color: gray;
+	margin: 0px;
 }
-.header{
-	padding: 12px;
-	border: 3px solid blue;
-	margin-bottom: 20px;
-}
-.header a{
-	margin-left: 100px;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: 2px solid white;
-}
-.floating-box {
-    display: inline-block;
-    width: 150px;
-    height: 75px;
-    margin: 10px;
-    border: 3px solid #73AD21;  
-	}
-
 .category {
 	border: 3px solid white;
 	background-color: #aaa;
@@ -34,4 +14,31 @@ body{
 .category h3{
 	color: white;
 	font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 25px;
+}
+#logo_image{
+	float: left;
+}
+li {
+    float: right;
+    padding-left: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
