@@ -1,80 +1,23 @@
 body{
 	background-color: lightgray;
+	background-image: url(../image/contact.jpg);
 	margin: 0px;
 }
 #contact_header{
 	text-align: center;
 }
 #contactus_box{
-	border: 2px solid gray;
-	box-shadow: 10px 10px 5px #888888;
-	border-radius: 15px;
-	background-color: white;
 	padding: 50px;
-	height: 50%;
-	width: 30%;
-	position: absolute;
-    top: 20%;
-    bottom: 20%;
-    left: 30%;
-    right: 30%;
+	font-size: 25px;
 }
-#contactus_location{
-	width: 100%;
-	line-height: 2.5;
-	border-radius: 10px;
-	border: none;
-	background-color: #aaa5;
+#contact_heading{
+	margin-bottom: 20px;
 }
-#signup_company{
-	width: 100%;
-	line-height: 2.5;
-	border-radius: 10px;
-	border: none;
-	background-color: #aaa5;
+#contact_heading a{
+	color: black;
 }
-#contactus_phone{
-	width: 100%;
-	line-height: 2.5;
-	border-radius: 10px;
-	border: none;
-	background-color: #aaa5;
-}
-#contactus_email{
-	width: 100%;
-	line-height: 2.5;
-	border-radius: 10px;
-	border: none;
-	background-color: #aaa5;
-}
-#cotnactus_url{
-	width: 100%;
-	line-height: 2.5;
-	border: none;
-	border-radius: 10px;
-	background-color: #aaa5;
-}
-#label_location{
-	color: #444444;
-}
-#label_phone{
-	color: #444444;
-}
-#label_email{
-	color: #444444;
-}
-#label_url{
-	color: #444444;
-}
-#contactus_button{
-	margin-top: 30px;
-	margin-right: 20px;
-	border: none;
-	border-radius: 5px;
-	padding: 15px 30px;
-}
-#contact_button_row{
-	text-align: center;
+.contact_us_paragraph{
+	margin-top: -15px;
 }
 ul {
     list-style-type: none;

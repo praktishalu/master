@@ -1,4 +1,39 @@
 body{
 	background-color: lightgray;
+	background-image: url(../image/healthcare_products.jpg);
 	margin: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 25px;
+}
+#logo_image{
+	float: left;
+}
+li {
+    float: right;
+    padding-left: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+h1{
+    margin-left: 20px;
+}
+table{
+    margin-left: 20px;
+    font-size: 25px;
 }

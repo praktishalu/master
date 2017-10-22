@@ -1,12 +1,6 @@
 body{
-	background-color: lightgray;
+    background-image: url(../image/abus.jpeg);
 	margin: 0px;
-}
-#header_about{
-	text-align: center;
-}
-#description_about{
-	text-align: center;
 }
 ul {
     list-style-type: none;
@@ -34,4 +28,34 @@ li a {
 
 li a:hover {
     background-color: #111;
+}
+.about_box{
+    padding: 25px;
+}
+#about_header a{
+    color: black;
+}
+#about_header{
+    margin-bottom: 5px;
+}
+#about_paragraph{
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 5px;
+}
+.about_key{
+    color: red;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.about_value{
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+#med_text{
+    font-weight: bold;
 }
