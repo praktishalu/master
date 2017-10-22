@@ -1,6 +1,10 @@
 body{
-    background-image: url(../image/abus.jpeg);
+    background-color: lightgray;
+    background-image: url(../image/about_us1.jpg);
 	margin: 0px;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 ul {
     list-style-type: none;

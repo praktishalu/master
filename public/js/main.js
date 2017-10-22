@@ -1,13 +1,26 @@
 console.log("main js called");
 var valid_email = false;
 var valid_password = false;
-var user = {};
-user.test = {};
-user.test.name = "test";
-user.test.company = "test company";
-user.test.email = "test@gmail.com";
-user.test.username = "test username";
-user.test.password = "test";
+if (typeof(Storage) !== "undefined") {
+	var user = JSON.parse(localStorage.getItem("user_details"));
+	if(user != null){
+		console.log("localStorage is not empty");
+		var user = JSON.parse(localStorage.getItem("user_details"));
+	}
+	else{
+		console.log("localStorage is empty");
+		var user = {};
+		user.test = {};
+		user.test.name = "test";
+		user.test.company = "test company";
+		user.test.email = "test@gmail.com";
+		user.test.username = "test username";
+		user.test.password = "test";
+	}
+}
+else{
+	alert("your browser does not support web Storage.. So login functionality cannot be implemented");
+}
 function validate_signout(){
 	document.getElementById("login_button").disabled = true;
 	document.getElementById("login_password").disabled = true;
@@ -25,7 +38,15 @@ function validate_signout(){
 function login(){
 	var login_email = document.getElementById("login_email").value;
 	var login_password = document.getElementById("login_password").value;
-		if(login_email == "test@gmail.com" && login_password == "test"){
+	// if (typeof(Storage) !== "undefined") {
+	// 	var user = JSON.parse(localStorage.getItem("user_details"));
+	// }
+	// else{
+	// 	alert("your browser does not support web Storage.. So login functionality cannot be implemented");
+	// }
+	console.log(JSON.stringify(user));
+	for(var i in user){
+		if(login_email == user[i].email && login_password == user[i].password){
 			if (typeof(Storage) !== "undefined") {
 				localStorage.setItem("loggedin", "true");
 			}
@@ -34,10 +55,10 @@ function login(){
 			}
 			location.href='../index.html';
 		}
+	}
 }
 
 function sign_up(){
-	alert("sign up button was clicked");
 	var name = document.getElementById("signup_name").value;
 	var company = document.getElementById("signup_company").value;
 	var email = document.getElementById("signup_email").value;
@@ -49,7 +70,8 @@ function sign_up(){
 	user[name].email = email;
 	user[name].username = username;
 	user[name].password = password;
-	localStorage.setItem("user_details", user);
+	localStorage.setItem("user_details", JSON.stringify(user));
+	location.href='../html/login.html';
 }
 function validate_signin_email(){
 	console.log(document.getElementById("login_email").value);
