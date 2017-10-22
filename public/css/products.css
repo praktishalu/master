@@ -1,6 +1,9 @@
 body{
     background-image: url(../image/products.jpg);
 	margin: 0px;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 ul {
     list-style-type: none;
