@@ -1,9 +1,9 @@
 body{
-    background-color: lightgray;
-    background-image: url(../image/about_us1.jpg);
-	margin: 0px;
-    /*background-position: center;*/
-    background-repeat: no-repeat;
+    background: url(../image/about_us1.jpg) no-repeat center center fixed;
+    margin: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 ul {

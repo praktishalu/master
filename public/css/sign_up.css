@@ -1,6 +1,10 @@
 body{
-	background-color: lightgray;
+    background: url(../image/sign_up_background.jpg) no-repeat center center fixed;
 	margin: 0px;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
 }
 #signup_box{
 	border: 2px solid gray;
@@ -51,7 +55,7 @@ body{
 	border-radius: 10px;
 	background-color: #aaa5;
 }
-#signup_button{
+#signup_signup_button{
 	margin-top: 20px;
 	margin-right: 20px;
 	border: none;
