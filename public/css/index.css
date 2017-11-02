@@ -1,7 +1,7 @@
 body{
 	background-color: gray;
 	margin: 0px;
-    /*background-image: url("../image/products_background.jpg");*/
+    background-image: url("../image/homepagefinal.jpg");
 }
 .row{
     margin-right: 0px;
@@ -127,10 +127,12 @@ body{
 .new_products_box{
     border: 3px solid blue;
     border-right: none;
+    height: 100px;
 }
 .featured_products_box{
     border: 3px solid red;
     border-right: none;
+    height: 100px;
 }
 .products_list{
     border: 3px solid white;
@@ -142,6 +144,14 @@ body{
     height: 100px;
 }
 .circle_navigation img{
+    width: 100%;
+    height: 100%;
+}
+.new_products_image{
+    width: 100%;
+    height: 100%;
+}
+.featured_products_image{
     width: 100%;
     height: 100%;
 }
